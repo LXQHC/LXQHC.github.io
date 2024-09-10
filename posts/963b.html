@@ -1,0 +1,320 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>老司机不会告诉你！学习资源最强下载神器，IDM最稳定版本，永久激活！ | Hexo</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="https://avatar.qjqq.cn/1/6503bb1b7fa1a.webp!avatar"><!-- index.css--><link rel="stylesheet" href="/css/index.css?v=2.0.12"><!-- inject head--><link rel="canonical" href="https://lxqxm.yop/posts/963b.html"><link rel="stylesheet" href="//open.lightxi.com/cdnjs/ajax/libs/font-awesome/6.6.0/css/all.min.css"><!-- aplayer--><link rel="stylesheet" href="//open.lightxi.com/cdnjs/ajax/libs/aplayer/1.10.1/APlayer.min.css"><!-- swiper--><!-- fancybox ui--><!-- katex--><!-- Open Graph--><meta name="description" content="前言：下载过学习资料的小伙伴都知道，下载链接是获取资料的一大难关，资料保存的网盘也是五花八门。 像大家常用的百度网盘、阿里云盘、夸克、迅雷网盘等等，太多了。 想要下载这些各自网盘的资料也是必须的下载各家的软件，对于需要经常学习的小伙伴来说，真的是非常的令人头秃。 这次分享的一款软件将会解决这些麻烦的"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="Hexo"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="https://avatar.qjqq.cn/1/6503bb1b7fa1a.webp!avatar"><link rel="apple-touch-icon" href="https://avatar.qjqq.cn/1/6503bb1b7fa1a.webp!avatar" sizes="180x180"><script>console.log(' %c Solitude %c ' + '2.0.12' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><script>(()=>{
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        window.utils = {
+            saveToLocal: saveToLocal,
+            getCSS: (url, id = false) => new Promise((resolve, reject) => {
+              const link = document.createElement('link')
+              link.rel = 'stylesheet'
+              link.href = url
+              if (id) link.id = id
+              link.onerror = reject
+              link.onload = link.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                link.onload = link.onreadystatechange = null
+                resolve()
+              }
+              document.head.appendChild(link)
+            }),
+            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+              const script = document.createElement('script')
+              script.src = url
+              script.async = true
+              script.onerror = reject
+              script.onload = script.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                script.onload = script.onreadystatechange = null
+                resolve()
+              }
+
+              Object.keys(attr).forEach(key => {
+                script.setAttribute(key, attr[key])
+              })
+
+              document.head.appendChild(script)
+            }),
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
+
+                if (name && keyObj[name]) return
+
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              utils.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+          },
+        }
+    })()</script><!-- global head--><script>const GLOBAL_CONFIG = {
+    root: '/',
+    algolia: undefined,
+    localsearch: {"preload":false,"path":"/search.xml"},
+    runtime: '2023-04-20 00:00:00',
+    lazyload: {
+        enable: false,
+        error: '/img/error_load.avif'
+    },
+    copyright: false,
+    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
+    randomlink: true,
+    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可","search":{"empty":"找不到你查询的内容：${query}","hit":"找到 ${hits} 条结果，用时 ${time} 毫秒","placeholder":"输入关键词快速查找","count":"共 <b>${count}</b> 条结果。"}},
+    aside: {
+        sayhello: {
+            morning: "✨ Good morning. It's a new day",
+            noon: "It's time for a midday break",
+            afternoon: "Tea time. 🍵",
+            night: "early bedtime",
+            goodnight: "Good night 😴",
+        },
+        sayhello2: [],
+        sayhello3: {
+            prefix: '好久不见，',
+            back: '欢迎再次回来，',
+        },
+    },
+    covercolor: {
+        enable: true
+    },
+    comment: false,
+    lightbox: 'null',
+    post_ai: false,
+    right_menu: {"mode":{"dark":"深色模式","light":"浅色模式"},"img_error":"此图片无法复制与下载","music":{"start":"播放音乐","stop":"暂停音乐"},"translate":{"translateDelay":0,"defaultEncoding":2}},
+    lure: false,
+    expire: false,
+};</script><!-- page-config head--><script id="config-diff">var PAGE_CONFIG = {
+    is_post: true,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: true,
+    comment: false,
+    ai_text: false,
+    color: false,
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body id="body"><!-- universe--><!-- background img--><!-- loading--><!-- console--><div id="console"><div class="close-btn" onclick="sco.hideConsole()"><i class="solitude fa-solid fa-xmark"></i></div><div class="console-card-group"><div class="console-card-group-right"><div class="console-card tags" onclick="sco.hideConsole()"><div class="card-content"><div class="author-content-item-tips">标签</div><div class="author-content-item-title">寻找感兴趣的领域</div></div><div class="card-tag-cloud"><a href="/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/">实用软件<sup>1</sup></a><a href="/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%BF%85%E5%A4%87/">大学生必备<sup>2</sup></a><a href="/tags/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/">下载工具<sup>1</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6/">软件<sup>2</sup></a><a href="/tags/%E9%BB%91%E7%A5%9E%E8%AF%9D%E6%82%9F%E7%A9%BA/">黑神话悟空<sup>1</sup></a><a href="/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/">小红书<sup>1</sup></a><a href="/tags/%E8%BF%90%E8%90%A5%E7%BB%8F%E9%AA%8C/">运营经验<sup>1</sup></a><a href="/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具<sup>1</sup></a></div></div><div class="console-card history" onclick="sco.hideConsole()"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/08/"><span class="card-archive-list-date">2024/08</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">2024/07</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span class="card-archive-list-count-unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><span class="darkmode_switchbutton" onclick="sco.switchDarkMode()" title="昼夜切换"><i class="solitude fa-solid fa-circle-half-stroke"></i></span></div><div class="console-btn-item" id="consoleHideAside"><span class="asideSwitch" onclick="sco.switchHideAside()" title="边栏显示控制"><i class="solitude fas fa-arrows-left-right-to-line"></i></span></div><div class="console-btn-item" id="consoleMusic" onclick="sco.musicToggle()"><span class="music-switch" title="音乐开关"><i class="solitude fa-solid fa-compact-disc"></i></span></div></div><div class="console-mask" onclick="sco.hideConsole()"></div></div><!-- sidebar--><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fa-solid fa-circle-half-stroke"></i><span>显示模式</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文库</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  fas fa-folder-closed"></i><span>文章列表</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  fas fa-clone"></i><span>全部分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  fas fa-tags"></i><span>全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>友链</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/links/"><i class="solitude  fas fa-user-group"></i><span>友情链接</span></a></li><li><a class="site-page child" href="javascript:travelling()"><i class="solitude  fas fa-gift"></i><span>宝藏博主</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>分享</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="solitude  fas fa-music"></i><span>音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>关于</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="solitude  fas fa-address-card"></i><span>本站</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-widget card-tags card-archives card-webinfo card-allinfo"><div class="card-tag-cloud"><a href="/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/">实用软件<sup>1</sup></a><a href="/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%BF%85%E5%A4%87/">大学生必备<sup>2</sup></a><a href="/tags/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/">下载工具<sup>1</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6/">软件<sup>2</sup></a><a href="/tags/%E9%BB%91%E7%A5%9E%E8%AF%9D%E6%82%9F%E7%A9%BA/">黑神话悟空<sup>1</sup></a><a href="/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/">小红书<sup>1</sup></a><a href="/tags/%E8%BF%90%E8%90%A5%E7%BB%8F%E9%AA%8C/">运营经验<sup>1</sup></a><a href="/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具<sup>1</sup></a></div></div></div></div><!-- keyboard--><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><a id="site-name" href="/" title="返回博客主页"><span class="title">Example</span><i class="solitude fa-solid fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">老司机不会告诉你！学习资源最强下载神器，IDM最稳定版本，永久激活！</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文库</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  fas fa-folder-closed"></i><span>文章列表</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  fas fa-clone"></i><span>全部分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  fas fa-tags"></i><span>全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>友链</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/links/"><i class="solitude  fas fa-user-group"></i><span>友情链接</span></a></li><li><a class="site-page child" href="javascript:travelling()"><i class="solitude  fas fa-gift"></i><span>宝藏博主</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>分享</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="solitude  fas fa-music"></i><span>音乐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>关于</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="solitude  fas fa-address-card"></i><span>本站</span></a></li></ul></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机一篇文章" href="javascript:void(0);"><i class="solitude fa-solid fa-dice-d6"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索"><i class="solitude fa-solid fa-magnifying-glass"></i></a></div><div class="nav-button" id="nav-console"><a class="console_switchbutton" onclick="sco.showConsole()" title="中控台" href="javascript:void(0);"><label><i class="left"></i><i class="center"></i><i class="right"></i></label></a></div><div class="nav-button" id="nav-totop" onclick="sco.toTop()"><a class="totopbtn"><i class="solitude fa-solid fa-arrow-up"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fa-solid fa-bars"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="nolazyload" id="post-cover" src="https://bu.dusays.com/2024/08/21/66c5c2ae38bf3.webp" alt="老司机不会告诉你！学习资源最强下载神器，IDM最稳定版本，永久激活！"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为原创文章，注意版权协议">原创</a><span class="post-meta-categories"><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a></span><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"><span class="tags-name tags-punctuation"><i class="solitude fa-solid fa-hashtag"></i>实用软件</span></a><a class="post-meta__tags" href="/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%BF%85%E5%A4%87/"><span class="tags-name tags-punctuation"><i class="solitude fa-solid fa-hashtag"></i>大学生必备</span></a><a class="post-meta__tags" href="/tags/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/"><span class="tags-name tags-punctuation"><i class="solitude fa-solid fa-hashtag"></i>下载工具</span></a></div></div></div></div><h1 class="post-title">老司机不会告诉你！学习资源最强下载神器，IDM最稳定版本，永久激活！</h1><div id="post-meta"><div class="meta-secondline"><span class="post-meta-date" title="发布于 2024-08-20 23:00:00"><i class="post-meta-icon solitude fa-solid fa-calendar-days"></i><time datetime="2024-08-20T15:00:00.000Z">2024-08-20T15:00:00.000Z</time></span><span class="post-meta-wordcount"><i class="post-meta-icon solitude fa-solid fa-file-word" title="文章字数"></i><span class="word-count">1k</span><span class="post-meta-separator"></span><i class="post-meta-icon solitude fa-solid fa-clock" title="阅读耗时"></i><span>4 min</span></span><span class="post-meta-position" title="作者IP归属地为上海"><i class="post-meta-icon solitude fas fa-location-dot"></i><span>上海</span></span><a class="post-meta-pv" href="/posts/963b.html" title="文章热度"><i class="post-meta-icon solitude fa-solid fa-fire-flame-curved"></i><span id="busuanzi_page_pv"><i class="solitude fa-solid fa-spinner"></i></span></a></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>下载过学习资料的小伙伴都知道，下载链接是获取资料的一大难关，资料保存的网盘也是五花八门。</p>
+<p>像大家常用的百度网盘、阿里云盘、夸克、迅雷网盘等等，太多了。</p>
+<p>想要下载这些各自网盘的资料也是必须的下载各家的软件，对于需要经常学习的小伙伴来说，真的是非常的令人头秃。</p>
+<p>这次分享的一款软件将会解决这些麻烦的步骤。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a73d28161.webp" style="zoom: 50%;" />
+
+
+
+<p><strong>IDM资源下载器，下载速度吊打迅雷，脚踢百度网盘，而且支持的资源格式异常齐全，几乎涵盖了大家常见的资源格式。</strong></p>
+<h2 id="IDM优势："><a href="#IDM优势：" class="headerlink" title="IDM优势："></a>IDM优势：</h2><p>优势很多，这里直接略过。。。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1，下载速度提高多达 8 倍。</span><br><span class="line"></span><br><span class="line">2，支持所有流行的浏览器：</span><br><span class="line"></span><br><span class="line">如 Microsoft Edge、Google Chrome、Mozilla Firefox、Opera、Internet Explorer、Safari、MSN Explorer、AOL、Mozilla Firebird、Avant Browser、Maxthon 和所有其他流行的浏览器中。</span><br><span class="line"></span><br><span class="line">3，一键轻松下载，支持 HTTP、FTP、HTTPS 和 MMS 协议。</span><br><span class="line"></span><br><span class="line">4，可下载资源类型多，涵盖视频、图片、文本、ppt、excel、音乐，word、压缩包等。</span><br><span class="line"></span><br><span class="line">格式：3GP 7Z AAC ACE AIF APK ARJ ASF AVI BIN BZ2 EXE GZ GZIP IMG ISO LZH M4A M4V MKV MOV MP3 MP4 MPA MPE MPEG MPG MSI MSU OGG OGV PDF PLJ PPS PPT QT R0* R1* RA RAR RM RMVB SEA SIT SITX TAR TIF TIFF WAV WMA WMV Z ZIP 3GP 7Z AAC ACE AI AIF ALZ APK APP APPX APPXBUNDLE ARC ARJ ASF AVI BH BIN BR BUNDLE BZ BZ2 CDA CSV DIF DLL DMG DOC DOCX EGG EPS EXE FLV GZ GZIP IMG IPA ISO ISZ JAR KEXT LHA LZ LZH LZMA M4A M4V MDB MID MKV MOV MP3 MP4 MPA MPE MPEG MPG MSI MSIX MSIXBUNDLE MSU MUI OGG OGV PDF PKG PPT PPTX PSD PST PUB QT R0* R1* RA RAR RM RMVB RTF SEA SIT SITX SLDM SLDX TAR TBZ TBZ2 TGZ TIF TIFF TLZ TXZ UDF VOB VSD VSDM VSDX VSS VSSM VST VSTM VSTX WAR WAV WBK WIM WKS WMA WMD WMS WMV WMZ WP5 WPD WPS XLS XLSX XPS XZ Z ZIP ZIPX ZPAQ ZSTD</span><br></pre></td></tr></table></figure>
+
+
+
+<p>所以说，基本安装一个IDM就够日常使用了。并且下载速度很快，突破网络限制，跑满连接的网络的带宽，网速有多快，下载就有多快。</p>
+<h2 id="安装使用教程："><a href="#安装使用教程：" class="headerlink" title="安装使用教程："></a>安装使用教程：</h2><h3 id="软件获取方式："><a href="#软件获取方式：" class="headerlink" title="软件获取方式："></a>软件获取方式：</h3><p>1，官网获取：</p>
+<p><a target="_blank" rel="noopener" href="https://www.internetdownloadmanager.com/download.html">https://www.internetdownloadmanager.com/download.html</a></p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a7447ceb5.gif" style="zoom:50%;" />
+
+
+
+<p>2，我提供的链接（官网无法下载的可用）：</p>
+<p>百度网盘：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/182BFdQj1FUBR98BSIwAi5g?pwd=suxc">https://pan.baidu.com/s/182BFdQj1FUBR98BSIwAi5g?pwd=suxc</a></p>
+<p>夸克：<a target="_blank" rel="noopener" href="https://pan.quark.cn/s/994c60ceb2fd">https://pan.quark.cn/s/994c60ceb2fd</a>   提取码：fW2F</p>
+<p>下载压缩包即可。</p>
+<h3 id="软件安装使用教程："><a href="#软件安装使用教程：" class="headerlink" title="软件安装使用教程："></a>软件安装使用教程：</h3><img src="https://bu.dusays.com/2024/08/20/66c4a74315721.gif" style="zoom:80%;" />
+
+<center>示例</center>
+
+
+
+<p>1、找到下载到你自己电脑的压缩包，鼠标选中右键单击，找到全部解压解压缩将压缩包解压。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a74104f38.webp" style="zoom:50%;" />
+
+
+
+<p>2、找到 idman642.exe 文件，右键单击安装。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a740c8968.webp" style="zoom:50%;" />
+
+
+
+<p>3、选择安装语言“简体中文”，（没有请忽略），继续安装。</p>
+<p><img src="https://bu.dusays.com/2024/08/20/66c4a73f478b6.webp"></p>
+<p> 4、阅读安装向导，如下图，点击“前进”，继续安装。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a73edf075.webp" style="zoom: 80%;" />
+
+
+
+<p>5、阅读并选中接受许可协议，如下图，点击“前进”、继续安装。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a73e4a758.webp" style="zoom:80%;" />
+
+
+
+<p>6 、选择安装路径，如下图（最好默认C盘安装路径），点击“前进”、继续安装。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a73e89afd.webp" style="zoom:80%;" />
+
+
+
+<p>7、确认安装，如下图，点击“前进”、继续安装。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a73e80c28.webp" style="zoom:80%;" />
+
+
+
+<p> 8、安装完成，如下图。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a73d5aaf5.webp" style="zoom:80%;" />
+
+
+
+<p>9、安装完成后退出软件。先不要打开。找到开始解压缩的压缩包，找到 IDM_6.4x_Crack_v19.7.exe 这个软件。鼠标右键单击安装。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a742143e1.webp" style="zoom: 50%;" />
+
+
+
+<p>10、然后按照下图的操作，选中并点击 Crack ，稍等片刻。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a74238543.webp" style="zoom:50%;" />
+
+
+
+<p>11、操作完成后如下图，点击 Finish 即可成功注册，</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a74278847.webp" style="zoom:50%;" />
+
+
+
+<p>退出，重新在桌面打开 IDM 即可看到成功注册。可以开始正常使用了。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a743955a7.webp" style="zoom:50%;" />
+
+
+
+<h2 id="使用体验："><a href="#使用体验：" class="headerlink" title="使用体验："></a>使用体验：</h2><p>可以看到，下载速度还是很快的。</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a73eabde8.webp" style="zoom:50%;" />
+
+
+
+<p>以下是使用示例：</p>
+<img src="https://bu.dusays.com/2024/08/20/66c4a742bfca2.webp" style="zoom:50%;" />
+
+<img src="https://bu.dusays.com/2024/08/20/66c4a74151ccb.webp" style="zoom:50%;" />
+
+<img src="https://bu.dusays.com/2024/08/20/66c4a74113c0c.webp" style="zoom:50%;" />
+
+<img src="https://bu.dusays.com/2024/08/20/66c4a740e51a0.webp" style="zoom:50%;" />
+
+<img src="https://bu.dusays.com/2024/08/20/66c4a74059ab5.webp" style="zoom:50%;" />
+
+
+
+<p>可以看到，支持的下载文件的格式还是够日常学习使用的。</p>
+<hr>
+<p>♦ 本文为原创文章，原文地址：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/YOVrxqPFNace5U7aHLQasQ">老司机不会告诉你！学习资源最强下载神器，IDM最稳定版本，永久激活！</a></p>
+<p>♦ 转载请注明：<a target="_blank" rel="noopener" href="https://www.lxqxm.top/posts/963b.html">陆小启</a>  2024年8月20日发布于 <a target="_blank" rel="noopener" href="https://www.lxqxm.top//">陆小启</a></p>
+<p>♦ 本文版权归作者，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文链接。</p>
+</article><div class="post-copyright"><div class="post-copyright__author_group"><a class="post-copyright__author_img" href="/about/"><img class="post-copyright__author_img_front" src="https://avatar.qjqq.cn/1/6503bb1b7fa1a.webp!avatar"></a><div class="post-copyright__author_name">Hexo</div><div class="post-copyright__author_desc"></div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>协议，完整转载请注明来自<a href="/">Hexo</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"><span class="tags-punctuation"><i class="solitude fa-solid fa-hashtag"></i>实用软件<span class="tagsPageCount">1</span></span></a><a class="post-meta__tags" href="/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%BF%85%E5%A4%87/"><span class="tags-punctuation"><i class="solitude fa-solid fa-hashtag"></i>大学生必备<span class="tagsPageCount">2</span></span></a><a class="post-meta__tags" href="/tags/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/"><span class="tags-punctuation"><i class="solitude fa-solid fa-hashtag"></i>下载工具<span class="tagsPageCount">1</span></span></a></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/5b28.html"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">《黑神话：悟空》逆天改命！八十一难轻松通关，35项神秘修改器，一键解锁大圣传奇！</div></div></a></div><div class="next-post pull-right"><a href="/posts/d86d.html"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">自媒体小白，两个月破万粉？！！</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="solitude fa-solid fa-star"></i><span>喜欢这篇的人也看了</span><div class="relatedPosts-link"><a onclick="event.preventDefault(); toRandomPost();" href="javascript:void(0);" rel="external nofollow" data-pjax-state="">随便逛逛</a></div></div><div class="relatedPosts-list"><div><a href="/posts/dddd.html" title="剪映国际版CapCut，免费任意国内创作者的全新视频编辑利器！"><img class="cover" src="https://bu.dusays.com/2024/08/28/66cf4886d1026.webp" alt="cover"><div class="content is-center"><div class="title">剪映国际版CapCut，免费任意国内创作者的全新视频编辑利器！</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-bg-top"><div class="is-center"><div class="author-info__top-group"><div class="author-info__sayhi" id="author-info__sayhi" onclick="sco.changeSayHelloText()">sayhello.morning</div></div></div></div><a class="card-info-avatar" href="/about/" title="头像"><div class="avatar-img"><img src="https://avatar.qjqq.cn/1/6503bb1b7fa1a.webp!avatar" alt="头像"></div></a><div class="card-info__desc_group"><div class="author-info__name">John Doe</div><div class="author-info__desc"></div><div class="card-info__data is-center"><a href="/archives/" title="累计文章数:4"><div class="length-num">4</div><div class="headline">文章</div></a><a href="/tags/" title="标签总数:8"><div class="length-num">8</div><div class="headline">标签</div></a><a href="/categories/" title="分类总数:2"><div class="length-num">2</div><div class="headline">分类</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" target="_blank" rel="noopener" href="https://github.com/everfu" title="Github"><i class="solitude  fab fa-github"></i></a><a class="social-icon" target="_blank" rel="noopener" href="https://space.bilibili.com/1329819902" title="Bilibili"><i class="solitude  fab fa-bilibili"></i></a></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fa-solid fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80%EF%BC%9A"><span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IDM%E4%BC%98%E5%8A%BF%EF%BC%9A"><span class="toc-text">IDM优势：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%9A"><span class="toc-text">安装使用教程：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="toc-text">软件获取方式：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%9A"><span class="toc-text">软件安装使用教程：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%9A"><span class="toc-text">使用体验：</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fa-solid fa-map"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/dddd.html" title="剪映国际版CapCut，免费任意国内创作者的全新视频编辑利器！"><img alt="剪映国际版CapCut，免费任意国内创作者的全新视频编辑利器！" src="https://bu.dusays.com/2024/08/28/66cf4886d1026.webp"></a><div class="content"><span class="title" href="/posts/dddd.html" title="剪映国际版CapCut，免费任意国内创作者的全新视频编辑利器！">剪映国际版CapCut，免费任意国内创作者的全新视频编辑利器！</span><span class="article-recent_post_categories" href="/posts/dddd.html">软件</span></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5b28.html" title="《黑神话：悟空》逆天改命！八十一难轻松通关，35项神秘修改器，一键解锁大圣传奇！"><img alt="《黑神话：悟空》逆天改命！八十一难轻松通关，35项神秘修改器，一键解锁大圣传奇！" src="https://bu.dusays.com/2024/08/21/66c5b74d127d1.webp"></a><div class="content"><span class="title" href="/posts/5b28.html" title="《黑神话：悟空》逆天改命！八十一难轻松通关，35项神秘修改器，一键解锁大圣传奇！">《黑神话：悟空》逆天改命！八十一难轻松通关，35项神秘修改器，一键解锁大圣传奇！</span><span class="article-recent_post_categories" href="/posts/5b28.html">软件</span></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/963b.html" title="老司机不会告诉你！学习资源最强下载神器，IDM最稳定版本，永久激活！"><img alt="老司机不会告诉你！学习资源最强下载神器，IDM最稳定版本，永久激活！" src="https://bu.dusays.com/2024/08/21/66c5c2ae38bf3.webp"></a><div class="content"><span class="title" href="/posts/963b.html" title="老司机不会告诉你！学习资源最强下载神器，IDM最稳定版本，永久激活！">老司机不会告诉你！学习资源最强下载神器，IDM最稳定版本，永久激活！</span><span class="article-recent_post_categories" href="/posts/963b.html">软件</span></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/d86d.html" title="自媒体小白，两个月破万粉？！！"><img alt="自媒体小白，两个月破万粉？！！" src="https://bu.dusays.com/2024/07/22/669e20b258b4a.png"></a><div class="content"><span class="title" href="/posts/d86d.html" title="自媒体小白，两个月破万粉？！！">自媒体小白，两个月破万粉？！！</span><span class="article-recent_post_categories" href="/posts/d86d.html">自媒体</span></div></div></div></div></div></div></main><footer id="footer"><div id="st-footer-bar"><div class="footer-logo"><span>Example</span></div><div class="footer-bar-description"></div><a class="footer-bar-link" href="/about/"></a></div><div id="footer_deal"><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/everfu" title="Github"><i class="solitude  fab fa-github"></i></a><a class="deal_link" href="mailto:o@efu.me" title="Mail"><i class="solitude  fas fa-envelope"></i></a><div class="nolazyload footer_mini_logo" id="footer_mini_logo" title="返回顶部" onclick="sco.toTop()"><img src alt="返回顶部"></div><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/1329819902" title="Bilibili"><i class="solitude  fab fa-bilibili"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://v.douyin.com/iJsLc8jt/" title="Douyin"><i class="solitude  fab fa-tiktok"></i></a></div><div id="st-footer"><div class="footer-group"><h3 class="footer-title">导航</h3><div class="footer-links"><a class="footer-item" href="/archives/" title="归档">归档</a><a class="footer-item" href="/categories/" title="分类">分类</a><a class="footer-item" href="/tags/" title="标签">标签</a></div></div><div class="footer-group"><h3 class="footer-title">服务</h3><div class="footer-links"><a class="footer-item" target="_blank" rel="noopener" href="https://api.76.al" title="青桔API">青桔API</a><a class="footer-item" target="_blank" rel="noopener" href="https://img.qjqq.cn" title="青桔图床">青桔图床</a></div></div><div class="footer-group"><h3 class="footer-title">支持</h3><div class="footer-links"><a class="footer-item" href="/about/" title="打赏记录">打赏记录</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/cookies/" title="Cookies">Cookies</a><a class="footer-item" href="/privacy/" title="隐私协议">隐私协议</a><a class="footer-item" href="/copyright/" title="版权协议">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><h3 class="footer-title">友链</h3><button class="random-friends-btn" onclick="randomLinksList()" title="友链"><i class="solitude fa-solid fa-arrows-rotate"></i></button></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2023 - 2024 By&nbsp;<a class="footer-bar-link" href="/">John Doe</a></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude" alt="主题">主题</a><a class="footer-bar-link" href="/atom.xml" alt="RSS">RSS</a><a class="footer-bar-link cc" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="solitude fa-solid fa-copyright"></i><i class="solitude fa-brands fa-creative-commons-by"></i><i class="solitude fa-brands fa-creative-commons-nc"></i><i class="solitude fa-brands fa-creative-commons-nd"></i></a></div></div></div></footer></div><!-- right_menu--><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="solitude fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="solitude fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="solitude fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-top"><i class="solitude fa-solid fa-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="solitude fa-solid fa-clone"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="solitude fa-solid fa-clipboard"></i><span>粘贴文本</span></div><div class="rightMenu-item" id="menu-newwindow"><i class="solitude fa-regular fa-window-maximize"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="solitude fa-solid fa-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="solitude fa-solid fa-clone"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="solitude fa-solid fa-cloud-arrow-down"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-search"><i class="solitude fa-solid fa-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="solitude fa-solid fa-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="solitude fa-solid fa-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="solitude fa-solid fa-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="solitude fa-solid fa-clone"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><div class="rightMenu-item" id="menu-randomPost" onclick="toRandomPost()||rm.hideRightMenu()"><i class="solitude fas fa-tower-broadcast"></i><span>随机短文</span></div><div class="rightMenu-item" onclick="pjax.loadUrl('/categories/')||rm.hideRightMenu()"><i class="solitude fas fa-clone"></i><span>全部分类</span></div><div class="rightMenu-item" onclick="pjax.loadUrl('/tags/')||rm.hideRightMenu()"><i class="solitude fas fa-tags"></i><span>全部标签</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><div class="rightMenu-item" id="menu-darkmode" onclick="sco.switchDarkMode()"><i class="solitude fa-solid fa-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></div><div class="rightMenu-item" id="menu-translate"><i class="solitude fa-solid fa-language"></i><span>轉為繁體</span></div></div></div><div id="rightmenu-mask"></div><!-- inject body--><div><script src="/js/utils.js?v=2.0.12"></script><script src="/js/main.js?v=2.0.12"></script><script src="/js/third_party/waterfall.min.js?v=2.0.12"></script><script src="//open.lightxi.com/cdnjs/ajax/libs/pjax/0.2.8/pjax.min.js"></script><script src="/js/tw_cn.js?v=2.0.12"></script><script src="//open.lightxi.com/cdnjs/ajax/libs/node-snackbar/0.1.16/snackbar.min.js"></script><script>var meting_api = 'https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r';</script><script src="//open.lightxi.com/cdnjs/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script><script src="//open.lightxi.com/cdnjs/ajax/libs/meting/2.0.1/Meting.min.js"></script><script src="//open.lightxi.com/cdnjs/ajax/libs/color-thief/2.4.0/color-thief.min.js"></script><script src="/js/covercolor/local.js?v=2.0.12"></script><script src="//open.lightxi.com/cdnjs/ajax/libs/pace/1.2.4/pace.min.js"></script><script src="/js/right_menu.js?v=2.0.12"></script><div class="js-pjax"><script defer pjax src="//open.lightxi.com/cdnjs/ajax/libs/busuanzi/2.3.0/bsz.pure.mini.min.js"></script></div></div><script>const links = [{"name":"Efu","link":"https://www.efu.me"},{"name":"青桔气球","link":"https://blog.qjqq.cn/"},{"name":"isYangs","link":"https://isyangs.cn"}]
+const randomText = '点击前往按钮进入随机一个友链，不保证跳转网站的安全性和可用性。本次随机到的是本站友链：⌈ ${name} ⌋'
+function travelling() {
+    const link = links[utils.randomNum(links.length)];
+    Snackbar.show({
+        text: randomText.replace(/\$\{name}/,link.name),
+        duration: 8000,
+        pos: 'top-center',
+        actionText: '前往',
+        onActionClick: function(element) {
+            element.style.opacity = 0;
+            window.open(link.link, '_blank');
+        }
+    });
+}
+</script><script>function randomLinksList() {
+    const linkcard = document.getElementById('friend-links-in-footer');
+    if (linkcard == null) return;
+
+    let data = '';
+    let linksCopy = [...links];
+    let count = Math.min(3, linksCopy.length);
+
+    for (let i = 0; i < count; i++) {
+        let index = utils.randomNum(linksCopy.length);
+        const {link, name} = linksCopy[index];
+        data += `<a class="footer-item" href="${link}" target="_blank" rel="noopener noreferrer nofollow">${name}</a>`;
+        linksCopy.splice(index, 1);
+    }
+
+    linkcard.innerHTML = data + '<a class="footer-item" href="/links/">更多</a>';
+}</script><!-- pjax--><script>const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: ['title','#body-wrap','#site-config','meta[name="description"]','.js-pjax','meta[property^="og:"]','#config-diff'],
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+})
+
+document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+})
+
+document.addEventListener('pjax:complete', () => {
+    window.refreshFn()
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+        pjax.loadUrl('/404.html')
+    }
+})</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = utils.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+    typeof rm === 'object' && rm.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><!-- google adsense--><!-- search--><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="solitude fa-solid fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="输入关键词快速查找"></div><div id="search-results"><div id="search-hits"><a class="tag-list" href="javascript:void(0);" onclick="pjax.loadUrl('/tags/Solitude/')">Solitude</a><a class="tag-list" href="javascript:void(0);" onclick="pjax.loadUrl('/tags/Hexo/')">Hexo</a></div></div><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div><script src="/js/search/local.js?v=2.0.12"></script><!-- Tianli-Talk--><!-- music--><div class="needEndHide" id="nav-music" onclick="sco.musicToggle()"><div id="nav-music-hoverTips">音乐已暂停</div><meting-js id="12293380869" server="netease" type="playlist" mutex="true" preload="none" data-lrctype="0" order="random" theme="var(--efu-main)"></meting-js></div></body></html><script>const posts=["posts/dddd.html","posts/5b28.html","posts/963b.html","posts/d86d.html"];function toRandomPost(){ pjax.loadUrl(GLOBAL_CONFIG.root+posts[Math.floor(Math.random()*posts.length)]); }</script>
