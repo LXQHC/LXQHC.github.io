@@ -190,6 +190,17 @@
     
     
     <entry>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[#aside-content .card-history .swiper-wrapper {    flex-direction: column}#aside-content .card-history .item-headline {    margin-left: 0;}#aside-content .card-history .history_slide {    text-align: left;    display: flex !important;    flex-direction: column;    align-items: flex-start}#aside-content .card-history .history_slide_time {    color: var(--efu-secondtext);    font-size: 14px;    font-style: italic;    font-weight: lighter}#aside-content .card-history .history_slide_link {    line-height: 1.5;    -webkit-line-clamp: 2;    display: -webkit-box;    overflow: hidden;    -webkit-box-orient: vertical}#aside-content .card-history .history_slide_link a {    color: var(--efu-main);    padding: 0 4px;    border-radius: 4px}#aside-content .card-history .history_slide_link a:hover {    color: var(--efu-white);    background: var(--efu-main)}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于本站</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -212,33 +223,22 @@
     
     
     <entry>
-      <title>即刻短文</title>
-      <link href="/essay/index.html"/>
-      <url>/essay/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
-      
-        <content type="html"><![CDATA[#aside-content .card-history .swiper-wrapper {    flex-direction: column}#aside-content .card-history .item-headline {    margin-left: 0;}#aside-content .card-history .history_slide {    text-align: left;    display: flex !important;    flex-direction: column;    align-items: flex-start}#aside-content .card-history .history_slide_time {    color: var(--efu-secondtext);    font-size: 14px;    font-style: italic;    font-weight: lighter}#aside-content .card-history .history_slide_link {    line-height: 1.5;    -webkit-line-clamp: 2;    display: -webkit-box;    overflow: hidden;    -webkit-box-orient: vertical}#aside-content .card-history .history_slide_link a {    color: var(--efu-main);    padding: 0 4px;    border-radius: 4px}#aside-content .card-history .history_slide_link a:hover {    color: var(--efu-white);    background: var(--efu-main)}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/js/privacy.js"/>
       <url>/js/privacy.js</url>
       
         <content type="html"><![CDATA[// 获取ipfunction getIpInfo(){    var fetchUrl = "https://api.76.al/api/ipv4/query?key=0UglC4Ex4JkTjGC3jSA0KARlah" //key申请：https://api.76.al    fetch(fetchUrl)      .then(res => res.json())      .then(json =>{        var country = json.data.country || "未能获取到信息";        var ip = json.data.ip || "未能获取到信息";        var province = json.data.province || "未能获取到信息";        var city = json.data.city || "未能获取到信息";        var isp = json.data.isp || "未能获取到信息";          document.getElementById("userAgentIp").innerHTML = ip;        document.getElementById("userAgentCountry").innerHTML = country;        document.getElementById("userAgentProv").innerHTML = province;        document.getElementById("userAgentCity").innerHTML = city;        document.getElementById("userAgentISP").innerHTML = isp;          // 使用ua-parser-js解析User-Agent        var parser = new UAParser();        var result = parser.getResult();        document.getElementById("userAgentOS").innerHTML = result.os.name + " " + result.os.version;        document.getElementById("userAgentBrowser").innerHTML = result.browser.name + " " + result.browser.version;      })  }    getIpInfo()]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>即刻短文</title>
+      <link href="/essay/index.html"/>
+      <url>/essay/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
