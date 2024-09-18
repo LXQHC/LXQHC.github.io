@@ -2076,7 +2076,7 @@ i.solitude {
 }
 span.tags-punctuation i {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   transition: none;
   margin-right: 2px;
   opacity: 0.4;
@@ -2782,29 +2782,6 @@ span.tags-punctuation i {
 [data-theme=dark] #aside-content > .card-widget.card-info {
   border: var(--style-border-always);
 }
-#aside-content .card-webinfo .webinfo .webinfo-item-title {
-  display: flex;
-}
-#aside-content .card-webinfo .webinfo .webinfo-item-title i {
-  line-height: 2 !important;
-  margin-right: 6px;
-  width: 16px;
-  text-align: center;
-  font-size: 16px !important;
-}
-#aside-content .card-webinfo .webinfo .webinfo-item {
-  display: flex;
-  justify-content: space-between;
-  white-space: nowrap;
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 0.1rem 0.5rem 0;
-}
-#aside-content .card-webinfo .webinfo .webinfo-item div:first-child {
-  -webkit-box-flex: 1;
-  flex: 1 1 0;
-  padding-right: 1rem;
-}
 #aside-content .card-allinfo hr {
   display: flex;
   position: relative;
@@ -3067,6 +3044,29 @@ span.tags-punctuation i {
 }
 #aside-content .card-widget.card-adsense {
   padding: 0;
+}
+.webinfo-item {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0.1rem 0.5rem 0;
+}
+.webinfo-item div:first-child {
+  -webkit-box-flex: 1;
+  flex: 1 1 0;
+  padding-right: 1rem;
+}
+.webinfo .webinfo-item-title {
+  display: flex;
+}
+.webinfo .webinfo-item-title i {
+  line-height: 2;
+  margin-right: 6px;
+  width: 16px;
+  text-align: center;
+  font-size: 16px;
 }
 #nav-music {
   display: flex;
@@ -5091,11 +5091,6 @@ span.tags-punctuation {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
-}
-@media screen and (min-width: 1300px) {
-  .recent-post-item > .recent-post-info .recent-post-info-top .article-title {
-    font-size: 30px;
-  }
 }
 .recent-post-item > .recent-post-info .recent-post-info-top .recent-post-info-top-tips {
   display: flex;
@@ -7832,7 +7827,7 @@ body[data-type=music] #nav-music {
   background: linear-gradient(120deg, #5b27ff 0, #00d4ff 100%);
   background-size: 200%;
   animation: gradient 15s ease infinite;
-  width: calc(60% - 0.5rem / 2);
+  flex: 4;
 }
 #about-page .myInfoAndSayHello .title1 {
   opacity: 0.8;
@@ -7853,7 +7848,7 @@ body[data-type=music] #nav-music {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  width: calc(40% - (0.5rem / 2));
+  flex: 3;
 }
 #about-page .aboutsiteTips h2 {
   margin-right: auto;
@@ -7908,7 +7903,6 @@ body[data-type=music] #nav-music {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  width: calc(50% - (0.5rem / 2));
   min-height: 450px;
 }
 #about-page .author-content-item.skills .tags-group-all {
@@ -7988,7 +7982,7 @@ body[data-type=music] #nav-music {
   }
 }
 #about-page .author-content-item-group.mapAndInfo {
-  width: calc(60% - (0.5rem / 2));
+  flex: 8;
   gap: 0.5rem;
 }
 @media screen and (min-width: 1300px) {
@@ -8089,7 +8083,6 @@ body[data-type=music] #nav-music {
   animation: gradient 15s ease infinite;
   min-height: 200px;
   height: fit-content;
-  width: calc(60% - (0.5rem / 2));
 }
 #about-page .author-content-item.buff .card-content {
   display: flex;
@@ -8117,7 +8110,6 @@ body[data-type=music] #nav-music {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  width: calc(40% - (0.5rem / 2));
 }
 #about-page .author-content-item.maxim .maxim-title {
   display: flex;
@@ -8136,7 +8128,6 @@ body[data-type=music] #nav-music {
   min-height: 300px;
   overflow: hidden;
   color: var(--efu-white);
-  width: 59%;
 }
 #about-page .author-content-item.game-apex::after {
   box-shadow: 0 -69px 203px 11px #04120f inset;
@@ -8159,7 +8150,6 @@ body[data-type=music] #nav-music {
   padding: 1rem 2rem;
 }
 #about-page .author-content-item.game-jl {
-  width: 39%;
   min-height: 300px;
   overflow: hidden;
   color: var(--efu-white);
@@ -8176,7 +8166,7 @@ body[data-type=music] #nav-music {
 .author-content-item.personalities {
   overflow: hidden;
   position: relative;
-  width: calc(60% - (0.5rem / 2));
+  flex: 6;
 }
 @media screen and (max-width: 768px) {
   .author-content-item.personalities {
@@ -8208,7 +8198,6 @@ body[data-type=music] #nav-music {
   min-height: 240px;
   position: relative;
   overflow: hidden;
-  width: calc(40% - (0.5rem / 2));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8297,7 +8286,6 @@ body[data-type=music] #nav-music {
 }
 #about-page .about-statistic {
   min-height: 380px;
-  width: calc(40% - (0.5rem / 2));
   background-size: cover;
   color: var(--efu-white);
   overflow: hidden;
@@ -8632,6 +8620,7 @@ div#banners .bannerText {
 @media screen and (max-width: 768px) {
   .author-content {
     margin-top: 0;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -8653,7 +8642,7 @@ div#banners .bannerText {
   margin-top: 0;
 }
 .author-content-item {
-  width: 49.5%;
+  flex: 4;
   border-radius: 12px;
   background: var(--efu-card-bg);
   border: var(--style-border-always);
