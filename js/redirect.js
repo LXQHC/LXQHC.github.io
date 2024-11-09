@@ -1,6 +1,6 @@
 (function() {
     // 检测当前域名是否为镜像网站的域名
-    var originalDomain = "lxqxm.top";
+    var originalDomain = "www.lxqxm.top";
     var currentDomain = window.location.hostname;
 
     // 如果当前域名不是原始域名，则弹出提示并重定向到原始网站
